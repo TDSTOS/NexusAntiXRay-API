@@ -7,6 +7,8 @@ totals stored across restarts), and listen to its events (alerts, bait veins, by
 - API version: **1.0.0** (first shipped with NexusAntiXRay 1.3.0)
 - Java 8 or newer, Spigot, Paper, Purpur and Folia
 - Package: `de.nexus.antixray.api` (events in `de.nexus.antixray.api.event`)
+- Download: [Releases](https://github.com/TDSTOS/NexusAntiXRay-API/releases)
+- Javadoc: [tdstos.github.io/NexusAntiXRay-API](https://tdstos.github.io/NexusAntiXRay-API/)
 
 The API is one interface, `NexusAntiXRayApi`, two small data interfaces (`MiningStats` and `StoredMiningStats`), one
 enum (`AntiXRayFeature`) and four Bukkit events. Everything else inside the NexusAntiXRay jar is obfuscated and not meant to be called.
@@ -25,9 +27,12 @@ enum (`AntiXRayFeature`) and four Bukkit events. Everything else inside the Nexu
 
 ## Getting the jar
 
-Download `NexusAntiXRay-API-1.0.0.jar` from the plugin's resource page. Next to it you find
+Download `NexusAntiXRay-API-1.0.0.jar` from the
+[Releases page](https://github.com/TDSTOS/NexusAntiXRay-API/releases). Next to it you find
 `NexusAntiXRay-API-1.0.0-sources.jar` and `NexusAntiXRay-API-1.0.0-javadoc.jar`; attach them in your IDE to get the
-documentation while you type.
+documentation while you type. The same Javadoc is online at
+[tdstos.github.io/NexusAntiXRay-API](https://tdstos.github.io/NexusAntiXRay-API/), one folder per API version
+(for example `/1.0.0/`).
 
 You only compile against this jar. **Do not put it into your own plugin jar.** At runtime the classes come from the
 NexusAntiXRay plugin itself. If you shade a copy into your plugin, your copy is a different set of classes on current
